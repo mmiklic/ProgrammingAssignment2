@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
   set <- function(h) {
     if(is.matrix(h)) {
       x <<- h
-      inv_mtrx <- NULL
+      inv_mtrx <<- NULL
     } else {
       print(paste("Set function requires a matrix object, not",
                   class(h)))
